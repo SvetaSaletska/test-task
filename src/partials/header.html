@@ -1,19 +1,17 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+  <div class="header-container container">    
+      <nav class="header-navigation">
+        <p href="/" class="header-logo">ALTANSCHOOL WEB COURSES</p>
+        </nav>
+    <button type="button" class="header-button-menu" aria-label="toggle-menu">
+      <!-- <svg class="header-menu" width="12" height="20">
+        <use href="../img/symbol-defs.svg#icon-menu"></use>
+      </svg> -->
+      <img class="header-button-menu" src="../img/menu.svg" alt="icon-menu" />
+
+      <!-- <svg class="header-button-icon-close hidden" width="24" height="24">
+        <use href="/img/sprite.svg#icon-menu-close"></use>
+      </svg> -->
+    </button>
   </div>
 </header>

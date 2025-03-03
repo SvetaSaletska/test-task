@@ -1,0 +1,19 @@
+@import './breakpoints';
+
+.container {
+  width: $mobile;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    width: $tablet;
+  }
+
+  @include media(desktop) {
+    width: $laptop;
+  }
+
+  @include media(desktop) {
+    width: $desktop;
+  }
+}
