@@ -1,0 +1,32 @@
+.hero-title{
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  letter-spacing: 0.15em;
+  margin-top: 39px;
+  margin-bottom: 18px;
+}
+
+.hero-text{
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  margin-left: 28px;
+}
+
+.hero-contant{
+  display: flex;
+}
+
+.hero-button {
+  width: 152px;
+  height: 32px;
+  color: white;
+  align-items: center;
+  background-color: #8E9A82;
+  margin-top: 28px;
+  border-radius: 59px;
+  border-color: initial;
+}
