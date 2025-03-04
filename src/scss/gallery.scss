@@ -1,0 +1,44 @@
+.gallery-container{
+    margin: 0;
+    padding-top: 26px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+.gallery-title {  
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.15em;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.gallery-image {
+    object-fit: cover;
+    width: 100%;
+    height: 136px ;
+    
+    margin-right: 5px;
+}
+
+.swiper-slide {
+    object-fit: cover;
+    max-width: 133px;
+    max-height: 136px;
+    height: auto;
+    position: relative;
+    
+  }
+
+  .swiper-wrapper {
+    padding: 0;
+    max-height: 136px;
+}
+  .gallery-static-img{
+    margin-top: 10px;
+    width: 375px;
+    height: 89px;
+  }

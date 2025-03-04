@@ -1,15 +1,18 @@
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 30;
+  // position: sticky;
+  // top: 0;
+  // z-index: 30;
+  margin-top: 20px;
+  margin-bottom: 43px;
+  background-color: #FAF9F8;
 }
 
 .header-container {
   display: flex;
-  justify-content: space-between;
-  padding: 5px;
+  align-items: center;
   box-sizing: border-box;
   width: 100%;
+  margin-bottom: 43px;
   position: relative;
 }
 
@@ -19,8 +22,9 @@
   height: 47px;
   justify-content: center;
   align-items: center;
+  margin-right: 9px;
+  padding: 0;
   background-color: transparent;
-  padding: 9px 14px;
   border: none;
   z-index: 20;
 }
@@ -29,6 +33,7 @@
   font-family: "Crimson Text", serif;
   font-weight: 400;
   font-style: normal;
+  margin-left: 37px;
+  margin-right: 45px;
   font-size: 16px;
-  margin-left: 20px;
 }
