@@ -2,11 +2,27 @@ import Swiper from 'swiper';
 import 'swiper/css';
 
 const swiper = new Swiper('.mySwiper', {
-    loop: true, // Додаємо зациклення
-    centeredSlides: true, // Центруємо поточний слайд
-    slidesPerView: 'auto', // Кількість слайдів, що видно на екрані
-    spaceBetween: 15, // Відстань між слайдами
-    effect: 'slide', // Вибір ефекту для слайдера
+    loop: true, // Зациклення
+    centeredSlides: true, // Центруємо активний слайд
+    slidesPerView: 'auto', // Кількість слайдів, що видно одночасно
+    spaceBetween: 30, // Відстань між слайдами
     grabCursor: true, // Курсор схожий на руку
-  });
-  
+    on: {
+        slideChange: function () {
+            updateSlideStyles();
+        },
+        init: function () {
+            updateSlideStyles();
+        }
+    }
+});
+
+function updateSlideStyles() {
+    const slides = document.querySelectorAll('.swiper-slide');
+    slides.forEach(slide => {
+        const image = slide.querySelector('.collection-image');
+        if (swiper.isBeginning || swiper.isEnd) {
+            slide.style.transform = 'scale(1)';
+        }
+    });
+}

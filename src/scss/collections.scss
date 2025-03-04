@@ -12,6 +12,8 @@
 
 .collections-swiper{
     margin-bottom: 22px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .collections-title {  
@@ -26,14 +28,31 @@
   }
 
   .collection-swiper-slide {
-    margin-right: 36px;
-    margin-left: 26px;
-    overflow: visible;
-  }
-  
-  .collection-image {
+    // margin-right: 36px;
+    // margin-left: 26px;
+    // object-fit: cover;
     max-width: 177px;
     max-height: 179px;
+    // height: auto;
+    // position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    width: 70%; /* Кожен слайд буде займати 70% ширини */
+    height: auto;
+  }
+  
+  .collections-swiper-wrapper{
+     max-height: 201px;
+  }
+
+  .collection-image {
+    width: 177px;
+    height: 179px;
+    object-fit: cover;
+    margin-right: 5px;
   }
 
   .collections-text {
@@ -52,3 +71,23 @@
     margin-right: auto;
     
   }
+
+  /* Центральний слайд (активний) */
+.swiper-slide-active .collection-image {
+  transform: scale(1.2); /* Центральне зображення збільшується */
+  opacity: 1; /* Центральне зображення чітке */
+}
+
+/* Для наступних і попередніх слайдів */
+.swiper-slide-next .collection-image,
+.swiper-slide-prev .collection-image {
+  transform: scale(0.8); /* Зменшення зображень по боках */
+  opacity: 0.5; /* Можна додати зменшення яскравості */
+}
+
+/* Відображення частини сусідніх слайдів */
+.swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
