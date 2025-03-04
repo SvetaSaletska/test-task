@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <script type="module" crossorigin src="/test-task/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/test-task/assets/index-DdqC3b10.css">
+    <link rel="modulepreload" crossorigin href="/test-task/assets/vendor-Bn3zXyiH.js">
+    <link rel="stylesheet" crossorigin href="/test-task/assets/vendor-Ds_YmOBQ.css">
+    <link rel="stylesheet" crossorigin href="/test-task/assets/index-DWaK2DD9.css">
   </head>
   <body>
     <header class="header">
@@ -38,11 +40,13 @@
         ORGANIC FASHION
       </h1>
       <div class="hero-contant">
-        <p class="hero-text">
+        <div class="hero-part"><p class="hero-text">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </p>
+          <button type="button" class="hero-button" >SHOP NOW
+      </button></div>
           <img
-          class="hero-image--icecream"
+          class="hero-image--plant"
           srcset="/test-task/assets/hero-plant-1x-CrSxtxka.png, /test-task/assets/hero-plant-2x-BRHbN-AQ.png"
           sizes="(min-width: 1920px), (min-width: 1366px), (min-width: 992px), (min-width: 375px)
                 100vw"
@@ -62,9 +66,84 @@
           media="(min-width: 1200px)"
         />
       </picture> -->
-      <button type="button" class="hero-button" >SHOP NOW
-      </button>
+      
     </div>
+      <section id="gallery-id" class="gallery-container">
+    <h2 class="gallery-title">SHOP BY CATEGORIES</h2>
+    <div class="swiper mySwiper">
+      <ul class="gallery-list swiper-wrapper">
+        <li class="swiper-slide">
+            <img
+            srcset="../img/gallery/foto1_1x.jpg 1x, ../img/gallery/foto1_2x.jpg 2x"
+            src="../img/gallery/foto1_1x.jpg"
+            alt="Plant"
+            class="gallery-image"
+          />
+        </li>
+        <li class="swiper-slide">
+            <img
+            srcset="../img/gallery/foto2_1x.jpg 1x, ../img/gallery/foto2_2x.jpg 2x"
+            src="../img/gallery/foto2_1x.jpg"
+            alt="Plant"
+            class="gallery-image"
+          />
+        </li>
+        <li class="swiper-slide">
+            <img
+            srcset="../img/gallery/foto3_1x.jpg 1x, ../img/gallery/foto3_2x.jpg 2x"
+            src="../img/gallery/foto3_1x.jpg"
+            alt="Plant"
+            class="gallery-image"
+          />
+        </li>
+        <li class="swiper-slide">
+            <img
+            srcset="../img/gallery/foto4_1x.jpg 1x, ../img/gallery/foto4_2x.jpg 2x"
+            src="../img/gallery/foto4_1x.jpg"
+            alt="Plant"
+            class="gallery-image"
+          />
+        </li>
+   </ul>
+   <div class="gallery-static-img">
+    <img
+            srcset="../img/gallery/foto5_1x.jpg 1x, ../img/gallery/foto5_2x.jpg 2x"
+            src="../img/gallery/foto4_5x.jpg"
+            alt="Plant"
+            class="gallery-image"
+          />
+   </div>
+  </section>
+      <section id="collection-id" class="collection-container">
+    <h2 class="collection-title">NEW COLLECTION</h2>
+    <div class="swiper mySwiper">
+      <ul class="collection-list swiper-wrapper">
+        <li class="swiper-slide">
+            <img
+            srcset="../img/collection/foto6-1x.jpg 1x, ../img/collection/foto6-2x.jpg 2x"
+            src="../img/collections/foto6-1x.jpg"
+            alt="Plant"
+            class="collection"
+          />
+        </li>
+        <li class="swiper-slide">
+            <img
+            srcset="../img/collection/foto7-1x.jpg 1x, ../img/collection/foto7-2x.jpg 2x"
+            src="../img/collections/foto7-1x.jpg"
+            alt="Plant"
+            class="collection-image"
+          />
+        </li>
+        <li class="swiper-slide">
+            <img
+            srcset="../img/collections/foto8-1x.jpg 1x, ../img/collection/foto8-2x.jpg 2x"
+            src="../img/collections/foto8-1x.jpg"
+            alt="Plant"
+            class="collection-image"
+          />
+        </li>
+   </ul>
+  </section>
     </main>
 
     <footer class="footer">
