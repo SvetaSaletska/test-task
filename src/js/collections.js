@@ -2,27 +2,33 @@ import Swiper from 'swiper';
 import 'swiper/css';
 
 const swiper = new Swiper('.mySwiper', {
-    loop: true, // Зациклення
+    loop: true, // Зациклення слайдів
     centeredSlides: true, // Центруємо активний слайд
-    slidesPerView: 'auto', // Кількість слайдів, що видно одночасно
-    spaceBetween: 30, // Відстань між слайдами
-    grabCursor: true, // Курсор схожий на руку
+    slidesPerView: 3, // Завжди видно 3 слайди
+    spaceBetween: 26, // Відстань між слайдами
+    grabCursor: true, // Курсор, схожий на руку
     on: {
         slideChange: function () {
-            updateSlideStyles();
+            updateSlideStyles(); // Оновлення стилів при зміні слайду
         },
         init: function () {
-            updateSlideStyles();
+            updateSlideStyles(); // Оновлення стилів при ініціалізації
         }
     }
 });
 
+// Функція для оновлення стилів слайдів
 function updateSlideStyles() {
     const slides = document.querySelectorAll('.swiper-slide');
     slides.forEach(slide => {
         const image = slide.querySelector('.collection-image');
-        if (swiper.isBeginning || swiper.isEnd) {
-            slide.style.transform = 'scale(1)';
+        // Якщо слайд активний (по центру)
+        if (slide.classList.contains('swiper-slide-active')) {
+            image.style.transform = 'scale(1.3)'; // Центральний слайд збільшується
+            image.style.opacity = '1'; // Центральний слайд чіткий
+        } else {
+            image.style.transform = 'scale(0.7)'; // Зменшуємо бокові слайди
+            image.style.opacity = '0.5'; // Бокові зображення менш чіткі
         }
     });
 }

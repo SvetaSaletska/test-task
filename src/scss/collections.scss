@@ -28,9 +28,9 @@
   }
 
   .collection-swiper-slide {
-    // margin-right: 36px;
-    // margin-left: 26px;
-    // object-fit: cover;
+    margin-right: 36px;
+    margin-left: 26px;
+    object-fit: cover;
     max-width: 177px;
     max-height: 179px;
     // height: auto;
@@ -38,9 +38,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     position: relative;
-    width: 70%; /* Кожен слайд буде займати 70% ширини */
+    flex-shrink: 0;
+    width: 33%; /* Кожен слайд буде займати 33% ширини */
     height: auto;
   }
   
@@ -72,21 +73,36 @@
     
   }
 
-  /* Центральний слайд (активний) */
+  .collections-swiper-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  /* Відображення зображень */
+.collection-image {
+  width: 177px;
+  height: 179px;
+  object-fit: cover;
+  margin-right: 5px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Центральний слайд - збільшене зображення */
 .swiper-slide-active .collection-image {
-  transform: scale(1.2); /* Центральне зображення збільшується */
-  opacity: 1; /* Центральне зображення чітке */
+  transform: scale(0.7); /* Бокові слайди зменшуються */
+  opacity: 1; /* Прозорість для бокових зображень */
 }
 
-/* Для наступних і попередніх слайдів */
-.swiper-slide-next .collection-image,
-.swiper-slide-prev .collection-image {
-  transform: scale(0.8); /* Зменшення зображень по боках */
-  opacity: 0.5; /* Можна додати зменшення яскравості */
+// /* Бокові слайди - зменшення */
+.swiper-slide-prev .collection-image,
+.swiper-slide-next .collection-image {
+  
+  // transform: scale(1.3); /* Центральний слайд збільшується */
+  opacity: 1; /* Центральний слайд чіткий */
 }
 
-/* Відображення частини сусідніх слайдів */
-.swiper-wrapper {
+/* Загальні стилі для обробки слайдів */
+.collections-swiper-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
