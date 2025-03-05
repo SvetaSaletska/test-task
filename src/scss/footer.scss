@@ -1,0 +1,94 @@
+.footer-container {
+    position: relative;
+    padding-top: 39px;
+    background-color: #F1F1F1;
+}
+
+.footer-title{
+    font-family: "Crimson Text", serif;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.15em;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 368px;
+    padding-bottom: 165px;
+}
+  
+.form__input {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: black;
+    margin-bottom: 10px;
+    height: 81px;
+    width: 257px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1px;
+    background: #F1F1F1;
+    border: 5px solid #8E9A82;
+    border-radius: 10px;
+    }
+
+    .form-textarea {
+        width: 257px;
+        height: 130px;
+    }
+
+    .form__input:valid:not(:placeholder-shown) {
+    border-color: #84A178;
+    }
+    .form__input:invalid:not(:placeholder-shown) {
+    border-color: #ff0000;
+    }
+    .form__input::placeholder {
+        color: #000;  /* Колір тексту плейсхолдера */
+        font-size: 15px;  /* Розмір шрифта плейсхолдера */
+       margin:  0; /* Переміщення плейсхолдера на початок */
+    }
+
+    .footer-btn {
+    display: flex;
+    width: 257px;
+    height: 47px;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    background-color: #8E9A82;
+    border-radius: 10px;
+    border: 1px solid #8E9A82;
+    z-index: 20;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: 0.15em;
+    color: white;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+   
+    .footer-image {
+        position: absolute;
+        top: 540px;
+        left: 65px;
+    }
+
+    .footer-color-wrapp{
+        width: 384px;
+        height: 323px;
+        background-color: #DBDBDB;
+    }

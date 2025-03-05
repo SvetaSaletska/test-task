@@ -1,0 +1,68 @@
+.about-container {
+    margin-top: 164px;
+}
+
+.about-title {
+    font-family: "Crimson Text", serif;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.15em;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.about-text,
+.about-text2 {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 283px;
+    height: 305px;
+    font-size: 16px;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    margin-left: 34px;
+    margin-right: auto;
+}
+
+.about-text2 {
+width: 280px;
+height: 105px;
+margin-bottom: 30px;
+font-size: 15px;
+}
+
+.about-image {
+    width: 198px;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 38px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-btn {
+    display: flex;
+    width: 149px;
+    height: 43px;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 5px solid #8E9A82;
+    z-index: 20;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+.about-color-wrapper{
+    padding-bottom: 90px;
+    background-color: white;
+}

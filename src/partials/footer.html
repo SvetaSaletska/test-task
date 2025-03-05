@@ -1,15 +1,41 @@
-<footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
+<footer id="footer" class="footer-container">
+    <h2 class="footer-title">FOLLOW US</h2>
+    <div class="footer-wrapper">
+        <form class="footer-form">
+            <input
+              class="form__input"
+              type="text"
+              name="username"
+              placeholder="Enter your name"
+              pattern="[A-Za-z0-9а-яА-Я]{5,}"
+              title="Логін не может бути меншим за 5 латинських символів."
+              required
+            />
+            <input
+              class="form__input"
+              type="email"
+              name="email"
+              placeholder="Enter a valid email address"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            />
+            <textarea
+            class="form-textarea form__input"
+            name="comment"
+            placeholder="Enter your message"
+            ></textarea>
+
+          <button type="submit" class="footer-btn">
+            SUBMIT
+          </button>
+        </form>
+        <div class="footer-color-wrapp">
+          <img
+            srcset="../img/footer/girl-with-plant-1x.jpg 1x,
+            ../img/footer/girl-with-plant-2x.jpg 2x"
+            src="../img/footer/girl-with-plant-1x.jpg"
+            alt="girl-with-plant"
+            class="footer-image"
+        />
+        </div>
+      </div>
 </footer>
