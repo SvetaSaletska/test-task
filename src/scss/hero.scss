@@ -7,6 +7,11 @@
   margin-top: 39px;
   margin-bottom: 18px;
   text-align: center;
+  @media screen and (min-width: 992px){
+    font-size: 48px;
+    margin-right: 80px;
+    text-align: right;
+  }
 }
 
 .hero-text{
@@ -15,11 +20,29 @@
   font-style: normal;
   font-size: 14px;
   margin-left: 28px;
+  @media screen and (min-width: 992px) {
+    margin-right: 190px;
+    width: 418px;
+    height: 124px;
+    text-align: left;
+    margin-left: 392px;
+    font-size: 20px;
+  }
+  
+}
+
+.hero-description {
+  @media screen and (min-width: 992px) {
+    margin-bottom: 45px;
+  }
 }
 
 .hero-contant{
   display: flex;
   margin-bottom: 45px;
+  @media screen and (min-width: 992px){
+    display: inline;
+  }
 }
 
 .hero-part{
@@ -31,6 +54,11 @@ margin-right: 30px;
 .hero-button {
   width: 152px;
   height: 32px;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  letter-spacing: 0.15em;
   color: white;
   align-items: center;
   background-color: #8E9A82;
@@ -38,4 +66,28 @@ margin-right: 30px;
   margin-left: 28px;
   border-radius: 59px;
   border: 1px solid #8E9A82;
+  @media screen and (min-width: 992px){
+    width: 227px;
+    height: 43px;
+    margin-left: 392px;
+    font-size: 20px;
+    margin-top: 39px;
+  }
+}
+
+.hero-wrapper {
+  @media screen and (min-width: 992px){
+    position: relative;
+    
+  }
+}
+
+.hero-image-plant {
+  @media screen and (min-width: 992px){
+    position: absolute;
+    width: 320px;
+    height: 330px;
+    margin-left: 47px;
+    top: -350px;
+  }
 }

@@ -2,6 +2,10 @@
     margin: 0;
     padding-top: 26px;
     background-color: white;
+    @media screen and (min-width: 992px) {
+      padding-top: 55px;
+      margin-bottom: 50px;
+    }
 }
 
 .gallery-title {  
@@ -13,6 +17,13 @@
   margin: 0;
   margin-bottom: 20px;
   text-align: center;
+  @media screen and (min-width: 992px) {
+    font-size: 32px;
+    width: 312px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .gallery-image {
@@ -21,6 +32,10 @@
     height: 136px ;
     
     margin-right: 5px;
+    @media screen and (min-width: 992px) {
+      width: 213px;
+      height: 275px;
+    }
 }
 
 .swiper-slide {
@@ -35,6 +50,10 @@
   .swiper-wrapper {
     padding: 0;
     max-height: 136px;
+    @media screen and (min-width: 992px) {
+      width: 999px;
+      height: 275px;
+    }
 }
   .gallery-static-img{
     margin-top: 10px;

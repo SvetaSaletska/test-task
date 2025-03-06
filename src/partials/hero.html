@@ -8,9 +8,23 @@
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </p>
           <button type="button" class="hero-button" >SHOP NOW
-      </button></div>
-          <img
-          class="hero-image--plant"
+      </button>
+    </div>
+    <div class="hero-wrapper">
+      <picture>
+        <source media="(max-width: 991px)" srcset="../img/hero/hero-plant-1x.png, ../img/hero/hero-plant-2x.png ">
+        <source media="(min-width: 992px) and (max-width: 1365px)" srcset="../img/hero/hero-plant-tablet-1x.png, ../img/hero/hero-plant-tablet-2x.png ">
+        <source media="(min-width: 1366px) and (max-width: 1919px)" srcset="./images/product/ice-cream_xl@1x.png, ./images/product/ice-cream_xl@2x.png ">
+        <source media="(min-width: 1920px)" srcset="./images/product/ice-cream_xl@1x.png, ./images/product/ice-cream_xl@2x.png ">
+
+        <img
+        class="hero-image-plant"
+        src="../img/hero/hero-plant-tablet-1x.png"
+        alt="plant image"
+    />
+    </picture>
+      <!-- <img
+          class="hero-image-plant"
           srcset="
             ./img/hero/hero-plant-1x.png,
             ./img/hero/hero-plant-2x.png,
@@ -20,7 +34,8 @@
           src="./images/hero/hero-plant-1x.png "
           alt="plant"
           loading="lazy"
-        />
+        /> -->
+    </div>
       </div>
       
       <!-- <picture>
