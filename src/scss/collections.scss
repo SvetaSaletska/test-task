@@ -1,6 +1,7 @@
 .collections-container{
     margin-bottom: 60px;
     background-color: #F1F1F1;
+    
 }
 
 .collections-image {
@@ -9,6 +10,9 @@
     height: 179px ;
     
     margin-right: 5px;
+    @media screen and (min-width: 992px) {
+      height: 264px;
+    }
 }
 
 .collections-swiper{
@@ -28,6 +32,13 @@
     margin-bottom: 38px;
     padding-top: 40px;
     text-align: center;
+    @media screen and (min-width: 992px) {
+      font-size: 32px;
+      width: 312px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   .collection-swiper-slide {
@@ -46,17 +57,14 @@
     flex-shrink: 0;
     width: 33%; /* Кожен слайд буде займати 33% ширини */
     height: auto;
+    @media screen and (min-width: 992px) {
+      max-width: 262px;
+    max-height: 264px;
+  }
   }
   
   .collections-swiper-wrapper{
      max-height: 201px;
-  }
-
-  .collection-image {
-    width: 177px;
-    height: 179px;
-    object-fit: cover;
-    margin-right: 5px;
   }
 
   .collections-text {
@@ -72,6 +80,15 @@
     margin-left: 34px;
     padding-top: 98px;
     margin-right: auto;
+
+    @media screen and (min-width: 992px) {
+      font-size: 32px;
+      width: 748px;
+      height: 66px;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+    }
     
   }
 
@@ -87,12 +104,20 @@
   object-fit: cover;
   margin-right: 5px;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  @media screen and (min-width: 992px) {
+    width: 262px;
+    height: 264px;
+  }
 }
 
 /* Центральний слайд - збільшене зображення */
 .swiper-slide-active .collection-image {
   transform: scale(0.8); /* Бокові слайди зменшуються */
   opacity: 0.5; /* Прозорість для бокових зображень */
+  @media screen and (min-width: 992px) {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 // .swiper-slide:not(.swiper-slide-active) .collection-image{
@@ -114,6 +139,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 992px) {
+    max-height: 264px;
+    gap:40px
+  }
 }
 
 .collections-wrapper{
@@ -122,4 +151,9 @@
   width: 646px;
   height: 204px;
   background-color: #DBDBDB;
+  @media screen and (min-width: 992px) {
+    top: 1500px;
+    width: 999px;
+    height: 316px;
+  }
 }

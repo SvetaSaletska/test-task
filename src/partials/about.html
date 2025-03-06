@@ -5,13 +5,18 @@
         <p class="about-text">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
-        <img
-            srcset="../img/about/plant-leaf-1x.jpg 1x,
-            ../img/about/plant-leaf-2x.jpg  2x"
-            src="../img/about/plant-leaf-1x.jpg"
-            alt="Plant"
-            class="about-image"
+        <picture>
+            <source media="(max-width: 991px)" srcset="../img/about/plant-leaf-1x.jpg, ../img/about/plant-leaf-2x.jpg ">
+            <source media="(min-width: 992px) and (max-width: 1365px)" srcset="../img/about/plant-leaf-tablet-1x.jpg, ../img/about/plant-leaf-tablet-2x.jpg ">
+            <source media="(min-width: 1366px) and (max-width: 1919px)" srcset="./images/product/ice-cream_xl@1x.png, ./images/product/ice-cream_xl@2x.png ">
+            <source media="(min-width: 1920px)" srcset="./images/product/ice-cream_xl@1x.png, ./images/product/ice-cream_xl@2x.png ">
+    
+            <img
+            class="collection-image"
+            src="../img/about/plant-leaf-tablet-1x.jpg"
+            alt="collection-image"
         />
+        </picture>
         <p class="about-text2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         <div class="about-color-wrapper">
             <button type="button" class="about-btn" data-modal-open>LEARN MORE</button>

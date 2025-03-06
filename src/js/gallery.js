@@ -5,9 +5,13 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const swiper = new Swiper('.mySwiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 4,
+    slidesPerView: '3',
+    spaceBetween: 5,
     loop: true,
+    // autoplay: {
+    //   delay: 3000, // затримка між слайдами (в мілісекундах)
+    //   disableOnInteraction: false, // слайдер продовжуватиме автоматичний перегляд навіть після взаємодії
+  
     // modules: [Navigation, Pagination],
     // navigation: {
     //   nextEl: '.swiper-button-next',
