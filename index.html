@@ -11,7 +11,7 @@
     <script type="module" crossorigin src="/test-task/index.js"></script>
     <link rel="modulepreload" crossorigin href="/test-task/assets/vendor-Bn3zXyiH.js">
     <link rel="stylesheet" crossorigin href="/test-task/assets/vendor-Ds_YmOBQ.css">
-    <link rel="stylesheet" crossorigin href="/test-task/assets/index-iWlZxk1J.css">
+    <link rel="stylesheet" crossorigin href="/test-task/assets/index-B7KNDh85.css">
   </head>
   <body>
     <header class="header">
@@ -25,19 +25,19 @@
     <nav class="header-desk-nav">
       <ul class="header-list">
         <li class="header-item">
-          <a href="#hero-id" class="header-link">Home</a>
+          <a href="#hero-id" class="header-link">HOME</a>
         </li>
         <li class="header-item">
-          <a href="#about-id" class="header-link">About</a>
+          <a href="#about-id" class="header-link">ABOUT</a>
         </li>
         <li class="header-item">
-          <a href="#shop-id" class="header-link">SHOP</a>
+          <a href="#gallery-id" class="header-link">SHOP</a>
         </li>
         <li class="header-item">
-          <a href="#blog-id" class="header-link">BLOG</a>
+          <a href="#collections-id" class="header-link">BLOG</a>
         </li>
         <li class="header-item">
-          <a href="#contact-id" class="header-link">CONTACT</a>
+          <a href="#footer-id" class="header-link">CONTACT</a>
         </li>
       </ul>
     </nav>
@@ -56,16 +56,34 @@
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           </p>
           <button type="button" class="hero-button" >SHOP NOW
-      </button></div>
-          <img
-          class="hero-image--plant"
-          srcset="/test-task/assets/hero-plant-1x-CrSxtxka.png, /test-task/assets/hero-plant-2x-BRHbN-AQ.png"
+      </button>
+    </div>
+    <div class="hero-wrapper">
+      <picture>
+        <source media="(max-width: 991px)" srcset="../img/hero/hero-plant-1x.png, ../img/hero/hero-plant-2x.png">
+        <source media="(min-width: 992px) and (max-width: 1365px)" srcset="../img/hero/hero-plant-tablet-1x.png, ../img/hero/hero-plant-tablet-2x.png">
+        <source media="(min-width: 1366px) and (max-width: 1919px)" srcset="./images/product/ice-cream_xl@1x.png, ./images/product/ice-cream_xl@2x.png">
+        <source media="(min-width: 1920px)" srcset="./images/product/ice-cream_xl@1x.png, ./images/product/ice-cream_xl@2x.png">
+
+        <img
+        class="hero-image-plant"
+        src="../img/hero/hero-plant-tablet-1x.png"
+        alt="plant image"
+    />
+    </picture>
+      <!-- <img
+          class="hero-image-plant"
+          srcset="
+            ./img/hero/hero-plant-1x.png,
+            ./img/hero/hero-plant-2x.png,
+          "
           sizes="(min-width: 1920px), (min-width: 1366px), (min-width: 992px), (min-width: 375px)
                 100vw"
           src="./images/hero/hero-plant-1x.png "
           alt="plant"
           loading="lazy"
-        />
+        /> -->
+    </div>
       </div>
       
       <!-- <picture>
@@ -85,6 +103,18 @@
     <div class="swiper mySwiper">
       <ul class="gallery-list swiper-wrapper">
         <li class="swiper-slide">
+          <!-- <picture>
+            <source media="(max-width: 991px)" srcset="../img/gallery/foto1_1x.jpg, ../img/gallery/foto1_2x.jpg ">
+            <source media="(min-width: 992px) and (max-width: 1365px)" srcset="../img/gallery/foto1-tablet-1x.jpg, ../img/gallery/foto1-tablet-2x.jpg ">
+            <source media="(min-width: 1366px) and (max-width: 1919px)" srcset="./images/product/ice-cream_xl@1x.png, ./images/product/ice-cream_xl@2x.png ">
+            <source media="(min-width: 1920px)" srcset="./images/product/ice-cream_xl@1x.png, ./images/product/ice-cream_xl@2x.png ">
+    
+            <img
+            class="gallery-image"
+            src="../img/gallery/foto1-tablet-1x.jpg"
+            alt="plant image"
+        />
+        </picture> -->
             <img
             srcset="../img/gallery/foto1_1x.jpg 1x, ../img/gallery/foto1_2x.jpg 2x"
             src="../img/gallery/foto1_1x.jpg"
@@ -183,7 +213,7 @@
       </div>
     </main>
 
-    <footer id="footer" class="footer-container">
+    <footer id="footer-id" class="footer-container">
     <h2 class="footer-title">FOLLOW US</h2>
     <div class="footer-wrapper">
         <form class="footer-form">
