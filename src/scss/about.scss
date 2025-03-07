@@ -1,5 +1,8 @@
 .about-container {
     margin-top: 164px;
+    @media screen and (min-width: 992px) {
+        margin-top: 278px;
+    }
 }
 
 .about-title {
@@ -11,6 +14,11 @@
     margin: 0;
     margin-bottom: 32px;
     text-align: center;
+    @media screen and (min-width: 992px) {
+     font-size: 32px;
+     margin-left: 350px;
+     margin-right: 458px;
+    }
 }
 
 .about-text,
@@ -26,6 +34,14 @@
     text-align: center;
     margin-left: 34px;
     margin-right: auto;
+    @media screen and (min-width: 992px) {
+        width: 561px;
+        height: 227px;
+        margin-right: 77px;
+        margin-left: 350px;
+        text-align: left;
+        font-size: 20px;
+    }
 }
 
 .about-text2 {
@@ -33,6 +49,13 @@ width: 280px;
 height: 105px;
 margin-bottom: 30px;
 font-size: 15px;
+@media screen and (min-width: 992px) {
+    margin-top: -210px;
+    margin-bottom: 38px;
+    width: 562px;
+    height: 97px;
+    font-size: 20px;
+}
 }
 
 .about-image {
@@ -42,6 +65,13 @@ font-size: 15px;
     margin-bottom: 38px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width: 992px) {
+    width: 252px;
+    height: 508px;
+    margin-left: 58px;
+    margin-right: 682px;
+    margin-top: -320px;
+    }
 }
 
 .about-btn {
@@ -61,8 +91,20 @@ font-size: 15px;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
+    @media screen and (min-width: 992px) {
+        width: 201px;
+        height: 46px;
+        margin-left: 352px;
+        margin-right: 445px;
+        margin-top: 38px;
+        letter-spacing: 0.15em;
+        font-size: 20px;
+    }
 }
 .about-color-wrapper{
     padding-bottom: 90px;
     background-color: white;
+    @media screen and (min-width: 992px) {
+        padding-bottom: 47px;
+    }
 }

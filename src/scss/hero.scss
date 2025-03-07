@@ -28,6 +28,11 @@
     margin-left: 392px;
     font-size: 20px;
   }
+  @media screen and (min-width: 1366px) {
+    margin-left: 92px;
+    margin-right: 184px;
+    text-align: left;
+  }
   
 }
 
@@ -89,5 +94,11 @@ margin-right: 30px;
     height: 330px;
     margin-left: 47px;
     top: -350px;
+    @media screen and (min-width: 1366px) {
+      width: 410px;
+      height: 422px;
+      margin-left: 138px;
+      margin-right: 92px;
+    }
   }
 }

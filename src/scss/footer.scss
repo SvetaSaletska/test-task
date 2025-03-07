@@ -2,6 +2,10 @@
     position: relative;
     padding-top: 39px;
     background-color: #F1F1F1;
+    @media screen and (min-width: 992px) {
+        padding-top: 110px;
+        
+    }
 }
 
 .footer-title{
@@ -13,6 +17,11 @@
     margin: 0;
     margin-bottom: 40px;
     text-align: center;
+    @media screen and (min-width: 992px) {
+        margin-left: 86px;
+        margin-right: 686px;
+        text-align: left;
+    }
 }
 
 .footer-form {
@@ -21,6 +30,11 @@
     margin: 0 auto;
     max-width: 368px;
     padding-bottom: 165px;
+    @media screen and (min-width: 992px) {
+        margin-left: 80px;
+        margin-right: 466px;
+        
+    }
 }
   
 .form__input {
@@ -39,11 +53,22 @@
     background: #F1F1F1;
     border: 5px solid #8E9A82;
     border-radius: 10px;
+    @media screen and (min-width: 992px) {
+        padding-top: 10px;
+        width: 437px;
+        height: 63px; 
+        font-size: 20px;       
+    }
+
     }
 
     .form-textarea {
         width: 257px;
         height: 130px;
+    @media screen and (min-width: 992px) {
+        width: 437px;
+        height: 101px;        
+    }
     }
 
     .form__input:valid:not(:placeholder-shown) {
@@ -79,16 +104,29 @@
     color: white;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 992px) {
+        width: 436px;
+        height: 46px;
     }
+}
    
     .footer-image {
         position: absolute;
         top: 540px;
         left: 65px;
+        @media screen and (min-width: 992px) {
+            left: 590px;
+            top: 88px;
+        }
     }
 
     .footer-color-wrapp{
         width: 384px;
         height: 323px;
         background-color: #DBDBDB;
+        @media screen and (min-width: 992px) {
+            height: 621px;
+            margin-top: -657px;
+            margin-left: 700px;
+        }
     }

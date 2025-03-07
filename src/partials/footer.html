@@ -29,13 +29,18 @@
           </button>
         </form>
         <div class="footer-color-wrapp">
-          <img
-            srcset="../img/footer/girl-with-plant-1x.jpg 1x,
-            ../img/footer/girl-with-plant-2x.jpg 2x"
-            src="../img/footer/girl-with-plant-1x.jpg"
-            alt="girl-with-plant"
+          <picture>
+            <source media="(max-width: 991px)" srcset="../img/footer/girl-with-plant-1x.jpg, ../img/footer/girl-with-plant-2x.jpg ">
+            <source media="(min-width: 992px) and (max-width: 1365px)" srcset="../img/footer/girl-with-plant-tablet-1x.jpg, ../img/footer/girl-with-plant-tablet-1x.jpg">
+            <source media="(min-width: 1366px) and (max-width: 1919px)" srcset="./images/product/ice-cream_xl@1x.png, ./images/product/ice-cream_xl@2x.png ">
+            <source media="(min-width: 1920px)" srcset="./images/product/ice-cream_xl@1x.png, ./images/product/ice-cream_xl@2x.png ">
+    
+            <img
             class="footer-image"
+            src="../img/footer/girl-with-plant-tablet-1x.jpg"
+            alt="girl-with-plant"
         />
+        </picture>
         </div>
       </div>
 </footer>
