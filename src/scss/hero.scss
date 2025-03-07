@@ -12,6 +12,10 @@
     margin-right: 80px;
     text-align: right;
   }
+  @media screen and (min-width: 1366px) {
+    margin-right: 195px;
+  }
+  
 }
 
 .hero-text{
@@ -29,7 +33,7 @@
     font-size: 20px;
   }
   @media screen and (min-width: 1366px) {
-    margin-left: 92px;
+    margin-left: 647px;
     margin-right: 184px;
     text-align: left;
   }
@@ -39,6 +43,9 @@
 .hero-description {
   @media screen and (min-width: 992px) {
     margin-bottom: 45px;
+  }
+  @media screen and (min-width: 1366px) {
+    margin-bottom: 280px;  
   }
 }
 
@@ -77,6 +84,12 @@ margin-right: 30px;
     margin-left: 392px;
     font-size: 20px;
     margin-top: 39px;
+  }
+  @media screen and (min-width: 1366px) {
+    width: 206px;
+    height: 55px;
+    margin-right: 513px;
+    margin-left: 647px;
   }
 }
 

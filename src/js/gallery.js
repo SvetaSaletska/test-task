@@ -5,8 +5,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const swiper = new Swiper('.mySwiper', {
-    slidesPerView: '3',
-    spaceBetween: 5,
+    slidesPerView: 'auto',
+    spaceBetween: 10,
     loop: true,
     // autoplay: {
     //   delay: 3000, // затримка між слайдами (в мілісекундах)
@@ -21,11 +21,6 @@ const swiper = new Swiper('.mySwiper', {
     //   el: '.swiper-pagination',
     //   clickable: true,
     // },
-    breakpoints: {
-      1200: {
-        spaceBetween: 32,
-      },
-    },
   });
   
 //   document.addEventListener('keydown', event => {
