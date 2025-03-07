@@ -3,6 +3,9 @@
     @media screen and (min-width: 992px) {
         margin-top: 278px;
     }
+    @media screen and (min-width: 1366px) {
+        margin-top: 266px;
+    }
 }
 
 .about-title {
@@ -19,6 +22,11 @@
      margin-left: 350px;
      margin-right: 458px;
     }
+    @media screen and (min-width: 1366px) {
+        padding-top: 106px;
+        margin-right: 676px;
+        margin-left: 505px;
+       }
 }
 
 .about-text,
@@ -42,6 +50,12 @@
         text-align: left;
         font-size: 20px;
     }
+    @media screen and (min-width: 1366px) {
+        width: 724px;
+        height: 182px;
+        margin-right: 136px;
+        margin-left: 505px;
+       }
 }
 
 .about-text2 {
@@ -55,6 +69,12 @@ font-size: 15px;
     width: 562px;
     height: 97px;
     font-size: 20px;
+}
+@media screen and (min-width: 1366px) {
+    width: 725px;
+    height: 105px;
+    margin-top: -380px;
+
 }
 }
 
@@ -71,6 +91,12 @@ font-size: 15px;
     margin-left: 58px;
     margin-right: 682px;
     margin-top: -320px;
+    }
+    @media screen and (min-width: 1366px) {
+        width: 316px;
+        height: 626px;
+        margin-top: -260px;
+        margin-left: 89px;
     }
 }
 
@@ -100,11 +126,20 @@ font-size: 15px;
         letter-spacing: 0.15em;
         font-size: 20px;
     }
+    @media screen and (min-width: 992px) {
+        width: 205px;
+        height: 58px;
+        margin-right: 628px;
+        margin-left: 505px;
+    }
 }
 .about-color-wrapper{
     padding-bottom: 90px;
     background-color: white;
     @media screen and (min-width: 992px) {
         padding-bottom: 47px;
+    }
+    @media screen and (min-width: 1366px) {
+        padding-bottom: 263px;
     }
 }
