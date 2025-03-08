@@ -6,7 +6,14 @@
     margin-top: 45px;
     margin-bottom: 93px;
   }
-
+  @media screen and (min-width: 1366px) {
+    margin-top: 73px;
+    margin-bottom: 100px;
+}
+  @media screen and (min-width: 1920px) {
+    margin-top: 84px;
+    margin-bottom: 189px;
+  }
 }
 
 .header-container {
@@ -51,6 +58,11 @@
     margin-right: 282px;
     margin-left: 138px;
   }
+  @media screen and (min-width: 1920px) {
+    margin-right: 160px;
+    margin-left: 194px;
+    font-size: 36px;
+  }
 }
 
 .header-desk-nav {
@@ -59,8 +71,14 @@
     display: flex;
     width: 454px;
     height: 21px;
-    
-    
+    }
+  @media screen and (min-width: 1366px) {
+      width: 561px;
+      height: 21px;
+    }
+  @media screen and (min-width: 1920px) {
+  width: 885px;
+  height: 42px;
 }
 }
 
@@ -73,6 +91,10 @@
   @media screen and (min-width: 1366px) {
     gap: 78px;
   }
+  @media screen and (min-width: 1920px) {
+    gap: 85px;
+    margin-right: 167px;
+  }
 }
 
 .header-link {
@@ -83,6 +105,9 @@
   padding: 4px;
   border-radius: 8px;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1920px) {
+    font-size: 32px;
+  }
 }
 .header-link:hover {
     color: #8E9A82;
