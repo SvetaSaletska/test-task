@@ -1,3 +1,17 @@
+.hero-container {
+  margin: 0 auto;
+  width: 375px; 
+  @media screen and (min-width: 992px) {
+    width: 992px;
+  }
+  @media screen and (min-width: 1366px) {
+    width: 1366px;
+  }
+  @media screen and (min-width: 1920x) {
+    width: 1920px;
+  }
+}
+
 .hero-title{
   font-family: "Crimson Text", serif;
   font-weight: 400;

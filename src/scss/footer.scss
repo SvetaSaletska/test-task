@@ -1,15 +1,21 @@
 .footer-container {
+    width: 375px;
+    margin: 0 auto;
+    align-items: center;
     position: relative;
     padding-top: 39px;
     background-color: #F1F1F1;
     @media screen and (min-width: 992px) {
+        width: 992px;
         padding-top: 110px;
         
     }
     @media screen and (min-width: 1366px) {
+        width: 1366px;
         padding-top: 145px;
     }
     @media screen and (min-width: 1920px) {
+        width: 1920px;
         padding-top: 220px;
     }
 }
@@ -96,7 +102,7 @@
         width: 437px;
         height: 101px;        
     }
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 1366px) {
         width: 561px;
         height: 130px;
         margin-bottom: 43px;
@@ -143,11 +149,9 @@
     @media screen and (min-width: 992px) {
         width: 436px;
         height: 46px;
+        
     }
-    @media screen and (min-width: 992px) {
-        width: 561px;
-        height: 81px;
-    }
+    
     @media screen and (min-width: 1366px) {
         width: 205px;
         height: 59px;
@@ -184,17 +188,18 @@
         height: 323px;
         background-color: #DBDBDB;
         @media screen and (min-width: 992px) {
+            width: 299px;
             height: 621px;
-            margin-top: -657px;
+            margin-top: -675px;
             margin-left: 700px;
         }
         @media screen and (min-width: 1366px) {
          width: 429px;
          height: 834px;
-         margin-top: -826px;
+         margin-top: -805px;
          margin-left: 950px;
         }
-        @media screen and (min-width: 1366px){
+        @media screen and (min-width: 1920px){
             width: 570px;
             height: 1190px;
          margin-top: -1075px;
