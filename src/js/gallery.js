@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 const swiper = new Swiper('.mySwiper', {
     slidesPerView: '3',
     spaceBetween: 10,
-    loop: false,
+    loop: true,
     loopAdditionalSlides: 3
   });
   
