@@ -2,12 +2,9 @@ import Swiper from 'swiper';
 import 'swiper/css';
 
 const swiper = new Swiper('.mySwiper', {
-    slidesPerView: '2',
+    slidesPerView: '1',
     spaceBetween: 4,
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+    loop: false,
+    loopAdditionalSlides: 3,
   });
   
